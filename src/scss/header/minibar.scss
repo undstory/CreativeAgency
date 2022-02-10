@@ -1,0 +1,65 @@
+.minibar {
+  height: 5rem;
+  background-color: $black;
+  line-height: 5rem;
+  font-size: 1.8rem;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+  }
+
+  &__contact {
+    &:first-of-type {
+      padding-right: 7rem;
+    }
+  }
+
+  &__icon {
+    padding-right: 1rem;
+    font-size: 2rem;
+
+    &--sm {
+      font-size: 2rem;
+      padding-left: 1.4rem;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .minibar {
+    font-size: 1.5rem;
+
+    &__contact {
+      &:first-of-type {
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .minibar {
+    &__contacts {
+      display: none;
+    }
+
+    &__socials {
+      margin-left: auto;
+    }
+
+    &__icon {
+      &--sm {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
