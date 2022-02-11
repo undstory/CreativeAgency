@@ -1,0 +1,63 @@
+.header {
+  &__container {
+    position: relative;
+  }
+
+  &__heading {
+    position: absolute;
+    right: 18.9rem;
+    bottom: 12.8rem;
+    z-index: 33;
+    padding: 9rem 18.6rem 10rem 17rem;
+    background-color: rgba(229, 229, 229, 0.58);
+    color: $black;
+  }
+
+  &__supertitle {
+    font-weight: $medium;
+    font-size: 39.6px;
+  }
+
+  &__title {
+    font-family: $decorFont;
+    font-size: 95.37px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-style: normal;
+    width: 464px;
+    line-height: 75px;
+  }
+
+  &__img {
+    width: 100%;
+    height: calc(100vh - 15.3rem);
+    object-fit: cover;
+  }
+
+  &__indicator {
+    width: 5rem;
+    height: 5rem;
+    background-color: $red;
+    border-radius: 50%;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 2rem; /* change width */
+  height: 2rem; /* change height */
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: $red;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 50%; // /* add border-radius */
+}

@@ -40,9 +40,10 @@
       background-color: $green;
       display: none;
       position: absolute;
-      top: 10.3rem;
+      top: 10rem;
       right: -3rem;
       width: 15rem;
+      z-index: 9999;
     }
   }
 

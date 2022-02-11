@@ -1,12 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const mobileLink = document.querySelectorAll(".mobile__link");
+    const navToggler = document.querySelector(".nav__toggler");
+    const mobileNav = document.querySelector(".mobile__nav");
+    const mobileClose = document.querySelector(".mobile__close");
 
-    document.querySelectorAll('.nav__toggler, .mobile__close, .mobile__link').forEach(elem => {
-        elem.addEventListener('click', () => {
-            document.querySelector('.mobile__nav').classList.toggle('hidden')
+
+        navToggler.addEventListener('click', () => {
+           mobileNav.style.display = "block";
         })
-    })
+
+        document.querySelectorAll(".mobile__item, .mobile__close").forEach((element) => {
+            element.addEventListener("click", () => {
+                mobileNav.style.display = "none";
+            })
+        })
+
+
 
 
 

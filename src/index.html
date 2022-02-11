@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Fraunces:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script
       src="https://kit.fontawesome.com/220bbdbf50.js"
       crossorigin="anonymous"
@@ -106,7 +106,7 @@
             </li>
           </ul>
 
-          <nav class="mobile__nav hidden">
+          <nav class="mobile__nav">
             <button class="mobile__close" type="button">
               <span class="fas fa-times"></span>
           </button>
@@ -120,29 +120,29 @@
             <li class="mobile__item">
               <a class="mobile__link" href="#">Portfolio</a>
             </li>
-            <li class="mobile__item">
+            <!-- <li class="mobile__item">
               <a class="mobile__link mobile__link--clients" href="#">Clients
-                <span class="nav__arrow fas fa-solid fa-angle-down"></span>
+
               </a>
-            </li>
-            <li class="mobile__item mobile__item--dropdown">
+            </li> -->
+            <li class="mobile__item">
               <a class="mobile__link" href="#">Testimonials</a>
             </li>
-            <li class="mobile__item mobile__item--dropdown">
+            <li class="mobile__item">
               <a class="mobile__link" href="#">FAQ</a>
             </li>
             <li class="mobile__item">
               <a class="mobile__link" href="#">Blog</a>
             </li>
-            <li class="mobile__item">
-              <a class="mobile__link mobile__link--contact" href="#">Contact
-                <span class="nav__arrow fas fa-solid fa-angle-down"></span>
+            <!-- <li class="mobile__item">
+              <a class="mobile__link" href="#">Contact
+
               </a>
-            </li>
-            <li class="mobile__item mobile__item--dropdown">
+            </li> -->
+            <li class="mobile__item">
               <a class="mobile__link" href="#">Text us</a>
             </li>
-            <li class="mobile__item mobile__item--dropdown">
+            <li class="mobile__item">
               <a class="mobile__link" href="#">Find us</a>
             </li>
           </ul>
@@ -150,7 +150,38 @@
           </nav>
         </div>
       </nav>
+      <header class="header">
+        <div  id="carouselExampleDark" class="carousel slide header__container" data-bs-ride="carousel">
+          <div class="header__heading">
+          <p class="header__supertitle">Hello we are</p>
+          <h1 class="header__title">creative agency</h1>
+          </div>
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"  aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="assets/gallery/image1.jpg" class="d-block w-100 header__img" alt="...">
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="assets/gallery/image2.jpg" class="d-block w-100 header__img" alt="...">
+
+            </div>
+            <div class="carousel-item">
+              <img src="assets/gallery/image3.jpg" class="d-block w-100 header__img" alt="...">
+
+            </div>
+          </div>
+
+
+        </div>
+      </header>
     </main>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
+
