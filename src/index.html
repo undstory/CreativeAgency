@@ -77,10 +77,10 @@
               <a class="nav__link" href="#about">About</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#works">Services</a>
+              <a class="nav__link" href="#services">Services</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Portfolio</a>
+              <a class="nav__link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav__item nav__item--drop">
               <a class="nav__link--drop" href="#"
@@ -117,13 +117,13 @@
             </button>
             <ul class="mobile__list">
               <li class="mobile__item">
-                <a class="mobile__link" href="#">About</a>
+                <a class="mobile__link" href="#about">About</a>
               </li>
               <li class="mobile__item">
-                <a class="mobile__link" href="#">Services</a>
+                <a class="mobile__link" href="#services">Services</a>
               </li>
               <li class="mobile__item">
-                <a class="mobile__link" href="#">Portfolio</a>
+                <a class="mobile__link" href="#portfolio">Portfolio</a>
               </li>
               <!-- <li class="mobile__item">
               <a class="mobile__link mobile__link--clients" href="#">Clients
@@ -215,9 +215,9 @@
         </div>
 
       </header>
-      <section class="about">
+      <section class="about" >
         <div class="about__container">
-          <h2 class="about__title">We are the Team</h2>
+          <h2 class="about__title" id="about">We are the Team</h2>
           <div class="about__wrapper">
             <div class="about__grid">
               <div class="about__person">
@@ -257,7 +257,7 @@
       </section>
       <section class="services">
         <div class="services__container container">
-          <h2 class="services__title">We can do it</h2>
+          <h2 class="services__title" id="services">We can do it</h2>
           <div class="services__wrapper">
             <div class="services__card">
               <h3 class="services__head">graphic design</h3>
@@ -302,6 +302,94 @@
               <span class="services__icon fa-solid fa-users"></span>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title" id="portfolio">Our portfolio</h2>
+
+            <div class="portfolio__category">
+              <button class="portfolio__btn active" data-filter="all">All</button>
+              <button class="portfolio__btn" data-filter="brand">Brand Identity</button>
+              <button class="portfolio__btn" data-filter="web">Web development</button>
+              <button class="portfolio__btn" data-filter="design">Graphic design</button>
+              <button class="portfolio__btn" data-filter="copy">Copywriting</button>
+            </div>
+            <div class="portfolio__wrapper">
+              <div class="portfolio__project" data-filter="brand">
+                <img class="portfolio__img" src="assets/portfolio/img1.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Brand Identity</span>
+                  <h3 class="portfolio__name">Castro Capital Museum in Belgrad</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="web">
+                <img class="portfolio__img" src="assets/portfolio/img2.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Web Development</span>
+                  <h3 class="portfolio__name">I love photo Camera App</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="design">
+                <img class="portfolio__img" src="assets/portfolio/img3.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Graphic Design</span>
+                  <h3 class="portfolio__name">Some Fancy Colors
+                    & Typo</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="brand">
+                <img class="portfolio__img" src="assets/portfolio/img4.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Brand Identity</span>
+                  <h3 class="portfolio__name">Pink Stuff<br /> New Identity</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="design">
+                <img class="portfolio__img" src="assets/portfolio/img5.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Graphic design</span>
+                  <h3 class="portfolio__name">Ginger Beers Habanesco</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="web">
+                <img class="portfolio__img" src="assets/portfolio/img6.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Web Development</span>
+                  <h3 class="portfolio__name">Musicofy<br /> Music App</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="copy">
+                <img class="portfolio__img" src="assets/portfolio/img7.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Copywriting</span>
+                  <h3 class="portfolio__name">Change ME technical writing</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="design">
+                <img class="portfolio__img" src="assets/portfolio/img8.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Graphic design</span>
+                  <h3 class="portfolio__name">Morgince<br /> New Fragrance</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+              <div class="portfolio__project" data-filter="brand">
+                <img class="portfolio__img" src="assets/portfolio/img9.jpg" />
+                <div class="portfolio__info">
+                  <span class="portfolio__index">Brand Identity</span>
+                  <h3 class="portfolio__name">Parsley Company Atlanta</h3>
+                  <a class="portfolio__link" href="#">View</a>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
     </main>

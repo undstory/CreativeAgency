@@ -1,0 +1,124 @@
+.portfolio {
+  background-color: $green;
+
+  &__title {
+    @include title;
+    padding: 10rem 2rem 10rem;
+  }
+
+  &__category {
+    @include flex_centered;
+    flex-wrap: wrap;
+    padding-bottom: 9rem;
+    column-gap: 6rem;
+    // :last-child {
+    //   margin-right: 0;
+    // }
+  }
+
+  &__btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $white;
+    font-weight: $medium;
+    font-size: 2.5rem;
+    // margin-right: 5rem;
+    padding-bottom: 2rem;
+    line-height: 2.5;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 11.8rem;
+    row-gap: 8rem;
+    padding-bottom: 12rem;
+  }
+
+  &__project {
+    position: relative;
+    max-width: 318px;
+    max-height: 318px;
+    flex-basis: calc(100% / 3);
+  }
+
+  &__info {
+    @include absolutly_centered;
+    opacity: 0;
+    transition: 0.5s;
+    width: 95%;
+    height: 95%;
+    background-color: $black;
+    background: rgba(50, 48, 49, 0.87);
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    max-width: 250px;
+    padding: 4.5rem 1rem 1.9rem;
+    font-size: 2.5rem;
+    font-weight: $medium;
+    text-transform: capitalize;
+  }
+
+  &__index,
+  &__link {
+    font-size: 2rem;
+    font-weight: $medium;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.active {
+  color: $yellow;
+}
+
+@include laptop {
+  .portfolio {
+    &__btn {
+      font-size: 2.2rem;
+    }
+    &__info {
+      opacity: 1;
+    }
+  }
+}
+
+@include tablet {
+  .portfolio {
+    &__btn {
+      font-size: 2rem;
+    }
+  }
+}
+
+@include mobile {
+  .portfolio {
+    &__info {
+      opacity: 1;
+    }
+    &__link {
+      color: $yellow;
+    }
+  }
+}
