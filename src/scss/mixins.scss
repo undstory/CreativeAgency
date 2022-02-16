@@ -3,8 +3,9 @@
 @mixin title {
   font-family: $mainFont;
   font-weight: $medium;
-  font-size: 39.6px;
+  font-size: 31.25px;
   color: $white;
+  text-align: center;
 }
 
 @mixin tablet {

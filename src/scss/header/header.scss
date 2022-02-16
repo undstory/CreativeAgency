@@ -9,7 +9,7 @@
     right: 13.4rem;
     bottom: 14.3rem;
     z-index: 33;
-    padding: 2.7rem 9.4rem 5.4rem 9.4rem;
+    padding: 4.7rem 9.4rem 5.4rem 9.4rem;
     background-color: rgba(229, 229, 229, 0.58);
     color: $black;
     display: flex;
@@ -30,6 +30,7 @@
     font-style: normal;
     max-width: 323px;
     line-height: 55px;
+    letter-spacing: -2px;
   }
 
   &__img {
@@ -79,7 +80,7 @@
 @include mobile {
   .header {
     &__heading {
-      bottom: 20rem;
+      bottom: 10rem;
     }
     &__title {
       font-size: 48.83px;
