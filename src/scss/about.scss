@@ -88,5 +88,21 @@
     &__grid {
       grid-template-columns: 1fr;
     }
+
+    &__img {
+      width: 80%;
+    }
+
+    &__cite {
+      font-size: 2.2rem;
+    }
+
+    &__person {
+      padding-bottom: 5rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
   }
 }

@@ -1,0 +1,91 @@
+.services {
+  background-color: $black;
+
+  &__title {
+    @include title;
+    padding: 17rem 2rem 12rem;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10.5rem;
+    place-items: center;
+    padding-bottom: 12rem;
+  }
+
+  &__card {
+    max-width: 324px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__head {
+    color: $black;
+    background-color: $red;
+    font-family: $decorFont;
+    font-size: 2.5rem;
+    font-weight: $bold;
+    line-height: 2.5;
+    text-align: center;
+    text-transform: lowercase;
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 2rem;
+    padding: 2.2rem;
+  }
+
+  &__icon {
+    color: $white;
+    display: inline-block;
+    align-self: flex-end;
+    font-size: 4rem;
+    padding-right: 2rem;
+  }
+}
+
+@include laptop {
+  .services {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include tablet {
+  .services {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@include mobile {
+  .services {
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__head {
+      font-size: 2.3rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__wrapper {
+      row-gap: 7.5rem;
+    }
+  }
+}
