@@ -1,11 +1,118 @@
 .testimonials {
   background-color: $black;
+  color: $white;
+
   &__title {
     @include title;
     padding: 10rem 2rem 10rem;
   }
 
+  &__container {
+    padding-bottom: 100px;
+  }
+
   &__img {
     border-radius: 50%;
+    display: inline-block;
+    width: 200px;
+
+    &.indicated {
+      border: 5px solid $yellow;
+      width: 259px;
+    }
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: $regular;
+    margin: 51px 0 10px;
+  }
+
+  &__company {
+    font-size: 2.5rem;
+    font-weight: $bold;
+    font-family: $decorFont;
+  }
+
+  &__quote {
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 525px;
+    text-align: center;
+    margin: 42px 0 158px;
+
+    &:not(.indicated) {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 46px;
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+
+  &__dot {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-indent: -999px;
+  cursor: pointer;
+  opacity: .5;
+  background-color: $red;
+  // background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+
+  &.indicated {
+    opacity: 1;
+  }
+  }
+
+  &__arrow {
+    align-self: center;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $white;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &__arrow--left {
+    margin-right: 118px;
+  }
+
+  &__arrow--right {
+    margin-left: 118px;
   }
 }
+
+

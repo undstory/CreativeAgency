@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNav = document.querySelector(".mobile__nav");
     const portfolioBtns = document.querySelectorAll('.portfolio__btn');
     const portfolioProjects = document.querySelectorAll('.portfolio__project');
-
+    const arrowR = document.querySelector('.testimonials__arrow--right');
+    const arrowL = document.querySelector('.testimonials__arrow--left');
 
 
         navToggler.addEventListener('click', () => {
@@ -32,6 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
             })
         })
+
+
+
 
 
 

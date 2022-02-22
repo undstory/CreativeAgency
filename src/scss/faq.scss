@@ -1,0 +1,89 @@
+.faq {
+  background-color: $black;
+  color: $white;
+
+  &__title {
+    @include title;
+    padding: 10rem 2rem 10rem;
+  }
+
+  &__container {
+    padding-bottom: 156px;
+  }
+
+  &__box {
+    max-width: 726px;
+    margin: 0 auto 38px;
+  }
+
+  &__summary {
+    color: $black;
+    background-color: $green;
+    display: block;
+
+    &::after {
+      display: inline-block;
+      content: url("../assets/Vector.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      text-align: right;
+      padding-bottom: 20px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &--second {
+      background-color: $red;
+    }
+
+    &--third {
+      background-color: $yellow;
+    }
+  }
+
+  &__question {
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1.6;
+    padding: 29px 26px;
+    width: 90%;
+  }
+
+  &__arrow {
+    text-align: right;
+    padding-right: 27px;
+  }
+
+  &__answer {
+    font-size: 1.8rem;
+    color: $white;
+    padding: 30px 10px 30px 64px;
+  }
+}
+
+details[open] summary:after {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  content: url("../assets/Vector2.png");
+
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+@include mobile {
+  .faq {
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__question {
+      font-size: 1.8rem;
+      width: 86%;
+    }
+
+    &__answer {
+      padding-left: 30px;
+    }
+  }
+}

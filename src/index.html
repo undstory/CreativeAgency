@@ -89,9 +89,9 @@
               </a>
 
               <div class="nav__list--dropdown">
-                <a class="nav__link--dropdown" href="#">Testimonials</a>
+                <a class="nav__link--dropdown" href="#testimonials">Testimonials</a>
 
-                <a class="nav__link--dropdown" href="#">FAQ</a>
+                <a class="nav__link--dropdown" href="#faq">FAQ</a>
               </div>
             </li>
             <li class="nav__item">
@@ -131,10 +131,10 @@
               </a>
             </li> -->
               <li class="mobile__item">
-                <a class="mobile__link" href="#">Testimonials</a>
+                <a class="mobile__link" href="#testimonials">Testimonials</a>
               </li>
               <li class="mobile__item">
-                <a class="mobile__link" href="#">FAQ</a>
+                <a class="mobile__link" href="#faq">FAQ</a>
               </li>
               <li class="mobile__item">
                 <a class="mobile__link" href="#">Blog</a>
@@ -395,45 +395,85 @@
       <section class="testimonials">
         <div class="testimonials__container">
           <h2 class="testimonials__title" id="testimonials">They like us</h2>
+
           <div class="testimonials__wrapper">
-            <div class="testimonials__images">
-              <div class="testimonials__box" data-id="1">
+
+          <div class="testimonials__box">
+
+            <button type="button" class="testimonials__arrow testimonials__arrow--left"><span class="fa-solid fa-angle-left"></span></button>
+
+              <div class="testimonials__person" data-id="1">
                   <img src="assets/testimonials/person1.jpg" alt="" class="testimonials__img">
-              </div>
-              <div class="testimonials__box indicated" data-id="2">
-                  <img src="assets/testimonials/person2.jpg" alt="" class="testimonials__img">
-              </div>
-              <div class="testimonials__box" data-id="3">
+                  <div class="testimonials__data">
+                    <h3 class="testimonials__name">Paul Classical</h3>
+                    <span class="testimonials__company">Habanesco Bar</span>
+                </div>
+                <p class="testimonials__quote">"As a satisfied customer, I can confidently recommend
+                  cooperation with the Creative Agency. This is the best cooperation in terms of content,
+                   technology and design, as has happened to us for many years."</p>
+                </div>
+              <div class="testimonials__person indicated" data-id="2">
+                  <img src="assets/testimonials/person2.jpg" alt="" class="testimonials__img indicated">
+                  <div class="testimonials__data indicated">
+                    <h3 class="testimonials__name">Rick Morrison</h3>
+                      <span class="testimonials__company">Morgance Co.</span>
+                  </div>
+                  <p class="testimonials__quote indicated">“We do not always agree, but we always strive for
+                    agreement. We are constantly looking for a common and coherent language.”</p>
+                </div>
+              <div class="testimonials__person" data-id="3">
                   <img src="assets/testimonials/person3.jpg" alt="" class="testimonials__img">
+                  <div class="testimonials__data">
+                    <h3 class="testimonials__name">Elena Agradable</h3>
+                      <span class="testimonials__company">Editorial de Libros</span>
+                  </div>
+                  <p class="testimonials__quote">"Cooperation with Creative Agency is the best thing
+                    that happened to us. Full professionalism, empathy and understanding.
+                    Great customer service, keep it up!"</p>
               </div>
+
+              <button type="button" class="testimonials__arrow testimonials__arrow--right"><span class="fa-solid fa-angle-right"></span></button>
+
+
           </div>
-          <div class="testimonials__names">
-              <div class="testimonials__data">
-                  <h3 class="testimonials__name">Paul Classical</h3>
-                  <span class="testimonials__company">Habanesco Bar</span>
-              </div>
-              <div class="testimonials__data indicated">
-                <h3 class="testimonials__name">Rick Morrison</h3>
-                  <span class="testimonials__company">Morgance Co.</span>
-              </div>
-              <div class="testimonials__data">
-                <h3 class="testimonials__name">Elena Agradable</h3>
-                  <span class="testimonials__company">Editorial de Libros</span>
-              </div>
-          </div>
-          <div class="testimonials__quotes">
-              <p class="testimonials__quote">"As a satisfied customer, I can confidently recommend
-                cooperation with the Creative Agency. This is the best cooperation in terms of content,
-                 technology and design, as has happened to us for many years."</p>
-              <p class="testimonials__quote indicated">“We do not always agree, but we always strive for
-                agreement. We are constantly looking for a common and coherent language.”</p>
-              <p class="testimonials__quote">"Cooperation with Creative Agency is the best thing
-                that happened to us. Full professionalism, empathy and understanding.
-                Great customer service, keep it up!"</p>
-          </div>
-          </div>
+
+
         </div>
-        </section>
+        <div class="testimonials__dots">
+          <span id="dot-1" class="testimonials__dot"></span>
+          <span id="dot-2" class="testimonials__dot"></span>
+          <span id="dot-3" class="testimonials__dot indicated"></span>
+          <span id="dot-4" class="testimonials__dot"></span>
+          <span id="dot-5" class="testimonials__dot"></span>
+
+      </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq__container container">
+          <h2 class="faq__title" id="faq">Frequently Asked Questions</h2>
+          <details class="faq__box">
+            <summary class="faq__summary"><span class="faq__question">Do you also design mobile applications?</span> </summary>
+            <p class="faq__answer">Of course! Mobile and web applications are definitely in our portfolio. Lack of responsiveness these days is unthinkable. Each design is created by default for all common screen sizes.</p>
+          </details >
+          <details class="faq__box">
+            <summary class="faq__summary faq__summary--second"><span class="faq__question">How many fixes are included?</span>  </summary>
+            <p class="faq__answer">We provide a maximum of 3 corrections for the basic plan. Each subsequent revision after approval of the project is an additional cost of 30% of the basic price.</p>
+          </details>
+          <details class="faq__box">
+            <summary class="faq__summary faq__summary--third"><span class="faq__question">How long is the waiting time for the project?</span>  </summary>
+            <p class="faq__answer">It all depends on the size of the project, but we always try to keep the
+              waiting time as short as possible, for large projects it is a maximum of 3 months.</p>
+          </details >
+          <details class="faq__box">
+            <summary class="faq__summary"><span class="faq__question">Does the cooperation include marketing activities?</span>  </summary>
+            <p class="faq__answer">Full-scope marketing activities are available in the Extended Care Package. It is always cooperation with an external company focused on marketing activities in the strict sense.</p>
+          </details >
+
+
+
+        </div>
+      </section>
 
     </main>
     <script src="scripts.js"></script>
