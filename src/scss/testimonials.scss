@@ -1,0 +1,11 @@
+.testimonials {
+  background-color: $black;
+  &__title {
+    @include title;
+    padding: 10rem 2rem 10rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+}
