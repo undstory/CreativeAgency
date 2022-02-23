@@ -1,0 +1,37 @@
+.find {
+    background-color: $black;
+    color: $white;
+
+    &__title {
+        @include title;
+        padding: 10rem 2rem 10rem;
+    }
+
+    &__container {
+       @include flex_centered;
+       height: 100%;
+    }
+
+    &__map {
+        margin-right: 73px;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        height: 100%;
+    }
+
+    &__icon {
+        display: inline-block;
+        color: $white;
+        font-size: 3rem;
+    }
+
+    &__info {
+        font-size: 2.5rem;
+        width: 188px;
+    }
+}
