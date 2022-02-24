@@ -4,34 +4,91 @@
 
     &__title {
         @include title;
-        padding: 10rem 2rem 10rem;
+        padding: 5rem 2rem 10rem;
     }
 
     &__container {
        @include flex_centered;
+       flex-wrap: wrap;
        height: 100%;
+       padding: 0 20px 162px;
     }
 
-    &__map {
-        margin-right: 73px;
-    }
+
 
     &__data {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-self: center;
+        align-items: flex-start;
+
         height: 100%;
+        gap: 56px;
+        flex-wrap: wrap;
     }
 
     &__icon {
         display: inline-block;
         color: $white;
         font-size: 3rem;
+        margin: 0 59px;
     }
 
     &__info {
         font-size: 2.5rem;
-        width: 188px;
+        padding-right: 20px;
+    }
+
+    &__place, &__phone, &__email {
+      @include flex_centered;
+    }
+}
+
+@include laptop {
+    .find {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__data {
+            justify-content: center;
+            order: 1;
+        }
+
+        &__map {
+            order: 2;
+            margin-top: 50px;
+        }
+
+        &__icon {
+            margin: 0 29px 0 0;
+        }
+    }
+}
+
+
+@include mobile {
+    .find {
+
+        &__container.container {
+            padding: 0;
+        }
+
+        &__map{
+            padding-bottom: 150px;
+        }
+        &__map iframe {
+            width: 300px;
+            height: 200px;
+        }
+
+        &__icon {
+            font-size: 2.5rem;
+        margin: 0 29px 0 0;
+        }
+
+        &__info {
+            font-size: 2rem;
+        }
     }
 }
