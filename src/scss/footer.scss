@@ -1,0 +1,108 @@
+.footer {
+  background-color: $green;
+  color: $white;
+
+  &__container {
+    padding: 37px 50px 36px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+
+    & li {
+      margin-left: 67px;
+      font-size: 2rem;
+
+      & a:hover {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__social {
+    @include flex_centered;
+    flex-wrap: wrap;
+  }
+
+  &__icons {
+    padding: 60px 20px;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    display: inline-block;
+    margin: 0 27px;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
+  &__info {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@include laptop {
+  .footer {
+    &__container {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__list {
+      & li {
+        margin-left: 47px;
+        font-size: 1.8rem;
+
+        & a:hover {
+          color: $yellow;
+        }
+      }
+    }
+
+    &__icon {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@include tablet {
+    .footer {
+        &__list {
+            display: none;
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        &__info {
+            flex-direction: column;
+
+            & span {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__icons {
+            padding-left: 0;
+            padding-right: 0;
+            @include flex_centered;
+            flex-wrap: wrap;
+
+            & a {
+                padding: 20px 0;
+            }
+        }
+    }
+}
