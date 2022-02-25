@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
   const navToggler = document.querySelector(".nav__toggler");
   const mobileNav = document.querySelector(".mobile__nav");
   const portfolioBtns = document.querySelectorAll(".portfolio__btn");
@@ -7,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrowL = document.querySelector(".testimonials__arrow--left");
   const persons = document.querySelectorAll(".testimonials__person");
   const dots = document.querySelectorAll(".testimonials__dot");
-  const dotsContainer = document.querySelectorAll(".testimonials__dots");
-  let currentPerson = 2;
-  const personArray = [persons];
+
   // mobile menu
 
   navToggler.addEventListener("click", () => {
