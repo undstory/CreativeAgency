@@ -55,6 +55,7 @@
 
     &--drop {
       position: relative;
+
     }
 
     &:first-of-type {
@@ -63,6 +64,7 @@
   }
 
   &__link {
+
     &:hover {
       color: $yellow;
     }
@@ -86,6 +88,7 @@
       height: 8rem;
       line-height: 8rem;
 
+
       &:hover {
         color: $yellow;
       }
@@ -101,6 +104,7 @@
 
 .nav__item--drop:hover {
   .nav__list--dropdown {
+
     display: block;
   }
 }

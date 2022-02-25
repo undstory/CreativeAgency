@@ -15,11 +15,6 @@
     border-radius: 50%;
     display: inline-block;
     width: 200px;
-
-    &.indicated {
-      border: 5px solid $yellow;
-      width: 259px;
-    }
   }
 
   &__name {
@@ -41,9 +36,7 @@
     text-align: center;
     margin: 42px 0 158px;
 
-    &:not(.indicated) {
-      display: none;
-    }
+
   }
 
   &__box {
@@ -51,7 +44,6 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    column-gap: 46px;
   }
 
   &__person {
@@ -60,6 +52,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    &:not(.indicated) {
+      display: none;
+    }
   }
 
   &__dots {
@@ -106,12 +102,27 @@
     }
   }
 
-  &__arrow--left {
-    margin-right: 118px;
+  &__arrow--left,   &__arrow--right {
+    margin: 0 38px;
   }
 
-  &__arrow--right {
-    margin-left: 118px;
+
+}
+
+@include mobile {
+  .testimonials {
+    &__img {
+
+      width: 150px;
+    }
+
+    &__quote {
+      font-size: 1.6rem;
+    }
+
+    &__arrow--left,   &__arrow--right {
+      margin: 0 10px 0 25px;
+    }
   }
 }
 
