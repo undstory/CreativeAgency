@@ -24,7 +24,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    margin: 2rem 0;
+    margin: 4rem 0 1rem;
 
     &:focus {
       outline: none;
@@ -60,6 +60,10 @@
   }
 }
 
+.fade {
+  animation: fade_in_show;
+}
+
 @keyframes fade_in_show {
   0% {
        opacity: 0;
@@ -71,6 +75,8 @@
 
   }
 }
+
+
 
 
 .hiddens {

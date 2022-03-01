@@ -44,6 +44,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    height: 600px;
   }
 
   &__person {
@@ -52,10 +53,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+    animation: fade 1.5s both;
 
-    &:not(.indicated) {
-      display: none;
-    }
   }
 
   &__dots {
@@ -69,8 +69,7 @@
   width: 2rem;
   height: 2rem;
   padding: 0;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 50px 5px 0 5px;
   text-indent: -999px;
   cursor: pointer;
   opacity: .5;
@@ -126,4 +125,14 @@
   }
 }
 
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 

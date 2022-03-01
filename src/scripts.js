@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       for (i = 0; i < persons.length; i++) {
         persons[i].style.display = "none";
+
       }
 
       for (i = 0; i < dots.length; i++) {
