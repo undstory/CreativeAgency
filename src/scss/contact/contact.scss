@@ -22,14 +22,20 @@
         background-color: $green;
         width: 726px;
 
+
         padding-left: 26px;
-        color: $black;
+        color: $white;
         font-size: 2rem;
         margin: 0 20px 48px;
 
         &::placeholder {
             color: #e5e5e5;
+            opacity: .5;
             font-size: 2rem;
+        }
+
+        &:focus {
+            background-color: #14565e;
         }
     }
 

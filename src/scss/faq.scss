@@ -16,10 +16,12 @@
     margin: 0 auto 38px;
   }
 
+
   &__summary {
     color: $black;
     background-color: $green;
     display: block;
+
 
     &::after {
       display: inline-block;
@@ -47,6 +49,7 @@
     line-height: 1.6;
     padding: 29px 26px;
     width: 90%;
+
   }
 
   &__arrow {
@@ -71,6 +74,10 @@ details[open] summary:after {
   background-position: center right;
 }
 
+details[open] summary ~ * {
+  animation: sweep 2s both;
+}
+
 @include mobile {
   .faq {
     &__title {
@@ -87,3 +94,9 @@ details[open] summary:after {
     }
   }
 }
+
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+

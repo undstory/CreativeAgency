@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
   const navToggler = document.querySelector(".nav__toggler");
   const mobileNav = document.querySelector(".mobile__nav");
   const portfolioBtns = document.querySelectorAll(".portfolio__btn");
@@ -8,13 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrowL = document.querySelector(".testimonials__arrow--left");
   const persons = document.querySelectorAll(".testimonials__person");
   const dots = document.querySelectorAll(".testimonials__dot");
-
+  let slideIndex = 1;
   // mobile menu
 
   navToggler.addEventListener("click", () => {
     mobileNav.classList.remove("hiddens");
     mobileNav.classList.add("visible");
-
   });
 
   document
@@ -51,40 +49,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // testimonials slider
 
-  if (!persons.length == 0) {
-    let slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
+  function showSlides(n) {
+    if (n > persons.length) {
+      slideIndex = 1;
     }
 
-    let currentSlide = function (n) {
-      showSlides((slideIndex = n));
-    };
-
-    function showSlides(n) {
-      if (n > persons.length) {
-        slideIndex = 1;
-      }
-
-      if (n < 1) {
-        slideIndex = persons.length;
-      }
-
-      for (i = 0; i < persons.length; i++) {
-        persons[i].style.display = "none";
-
-      }
-
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" indicated", "");
-      }
-
-      persons[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " indicated";
+    if (n < 1) {
+      slideIndex = persons.length;
     }
+
+    for (i = 0; i < persons.length; i++) {
+      persons[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" indicated", "");
+    }
+
+    persons[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " indicated";
   }
+
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // let currentSlide = function (n) {
+  //   showSlides((slideIndex = n));
+  // };
 
   arrowL.addEventListener("touchstart", () => {
     plusSlides(-1);
