@@ -12,14 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // mobile menu
 
   navToggler.addEventListener("click", () => {
-    mobileNav.style.display = "block";
+    mobileNav.classList.remove("hiddens");
+    mobileNav.classList.add("visible");
+
   });
 
   document
     .querySelectorAll(".mobile__item, .mobile__close")
     .forEach((element) => {
       element.addEventListener("click", () => {
-        mobileNav.style.display = "none";
+        // mobileNav.style.display = "none";
+        mobileNav.classList.remove("visible");
+        mobileNav.classList.add("hiddens");
       });
     });
 

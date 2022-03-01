@@ -38,12 +38,14 @@
 
     &--dropdown {
       background-color: $green;
-      display: none;
+      // display: none;
       position: absolute;
       top: 10rem;
       right: -3rem;
       width: 15rem;
       z-index: 9999;
+      opacity: 0;
+      transition: opacity .5s ease;
     }
   }
 
@@ -55,7 +57,6 @@
 
     &--drop {
       position: relative;
-
     }
 
     &:first-of-type {
@@ -71,6 +72,7 @@
 
     &--drop {
       display: block;
+
 
       &:hover {
         color: $yellow;
@@ -104,8 +106,8 @@
 
 .nav__item--drop:hover {
   .nav__list--dropdown {
-
-    display: block;
+    opacity: 1;
+    // display: block;
   }
 }
 
