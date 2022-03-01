@@ -4,7 +4,7 @@
     color: $white;
     width: 60%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     text-align: right;
@@ -12,6 +12,7 @@
     padding-top: 0.5rem;
     transition: 0.5s ease-out;
     z-index: 9999;
+    box-shadow: -5px 6px 21px -9px $black;
   }
   &__nav {
     display: none;
