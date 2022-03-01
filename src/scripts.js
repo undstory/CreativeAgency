@@ -86,6 +86,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  arrowL.addEventListener("touchstart", () => {
+    plusSlides(-1);
+  });
+
+  arrowR.addEventListener("touchstart", () => {
+    plusSlides(1);
+  });
+
   arrowL.addEventListener("click", () => {
     plusSlides(-1);
   });
